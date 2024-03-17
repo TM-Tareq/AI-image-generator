@@ -7,7 +7,15 @@ const handleFormSubmission = (e) => {
     const userPrompt = e.srcElement[0].value;
     const userImgQuantity = e.srcElement[1].value;
 
-    console.log(userPrompt, userImgQuantity);
+
+    // Creating HTML markup for image cards forms state
+    const imgCardMarkup = Array.form({length: userImgQuantity}, () =>
+    `<div class="img-card loading">
+    <img src="images/loader.svg" alt="Image">
+    <a href="" class="download-btn">
+        <img src="images/download.svg" alt="Download Icon">
+    </a>
+</div>`).join("");
 }
 
 generateForm.addEventListener("submit", handleFormSubmission);
