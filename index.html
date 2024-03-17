@@ -16,8 +16,16 @@
                 Convert your text into an image within a second using this JavaScript-powered AI generator tool.
             </p>
             <form action="" class="generate-form">
-                <input class="promot-input" placeholder="Describe what you want to see"></input>
-                <div class="controls"></div>
+                <input class="promot-input" placeholder="Describe what you want to see" required></input>
+                <div class="controls">
+                    <select name="" id="" class="img-quantity">
+                        <option value="1">1 image</option>
+                        <option value="2">2 image</option>
+                        <option value="3">3 image</option>
+                        <option value="4" selected>4 image</option>
+                    </select>
+                    <button type="submit" class="generate-btn">Generate</button>
+                </div>
             </form>
         </div>
     </section>
